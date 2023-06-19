@@ -7,14 +7,16 @@ namespace Elarax.AwsMailService
     public interface IEmailService
     {
         bool SendEmail(MailMessage mailMessage);
+
         Task<bool> SendEmailAsync(MailMessage mailMessage);
+				Task<bool> SendEmailAsync(MailMessage mailMessage, IEmailServiceConfig emailServiceConfig);
 
         Task<bool> SendEmailAsync(string to, string subejct, string body, bool isbodyHtml = true);
 
 				Task<bool> SendEmailAsync(string to, string subejct, string body, bool isbodyHtml, IEmailServiceConfig emailServiceConfig);
 
-        Task<MailMessage[]> SendMultipleEmailsAsync(params MailMessage[] mailMessages);
+				Task<MailMessage[]> SendMultipleEmailsAsync(params MailMessage[] mailMessages);
 
-        MailMessage[] SendMultipleEmails(params MailMessage[] mailMessages);
+        // MailMessage[] SendMultipleEmails(params MailMessage[] mailMessages);
     }
 }

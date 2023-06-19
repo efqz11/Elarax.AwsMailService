@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
+  <VersionPrefix>1.0.1</VersionPrefix>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>efqz11</Authors>
     <Company>Elara n Co.</Company>
