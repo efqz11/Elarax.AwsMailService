@@ -27,7 +27,8 @@ namespace Elarax.AwsMailService
         /// Port for Host
         /// </summary>
         int Port { get; set; }
-				string _username {get;}
+
+			string _username {get;}
 
 
         /// <summary>

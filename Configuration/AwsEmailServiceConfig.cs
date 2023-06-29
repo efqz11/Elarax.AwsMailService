@@ -20,15 +20,14 @@ namespace Elarax.AwsMailService
         /// </summary>
         public string ApiKey { get; set; }
 
-
-				public string ApiSecret { get; set; }
+			public string ApiSecret { get; set; }
         /// <summary>
         /// <inheritdoc />
         /// </summary>
         public int Port { get; set; }
 
 
-				public string _username => ApiKey;
+		public string _username => ApiKey;
 
         private bool? _enableSsl;
         public bool EnableSsl

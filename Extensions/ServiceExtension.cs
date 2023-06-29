@@ -8,7 +8,7 @@ namespace  Elarax.AwsMailService
     public static class ServiceExtension
     {
         public static void AddEmailService(this IServiceCollection services,
-            Action<EmailServiceConfig> setupAction)
+            Action<AwsEmailServiceConfig> setupAction)
         {
             // Add the service.
             services.AddSingleton<IEmailService, EmailService>();
